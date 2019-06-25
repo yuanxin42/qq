@@ -19,10 +19,13 @@ function createWindow () {
   /**
    * Initial window options
    */
+  // Menu.setApplicationMenu(null)
   mainWindow = new BrowserWindow({
-    height: 563,
+    height: 327,
     useContentSize: true,
-    width: 1000
+    width: 428,
+    frame: false,
+    resizable: false
   })
 
   mainWindow.loadURL(winURL)
