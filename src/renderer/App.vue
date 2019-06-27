@@ -5,11 +5,15 @@
 </template>
 
 <script>
-  export default {
-    name: 'my-qq'
-  }
+export default {
+  name: 'my-qq'
+}
 </script>
 
 <style>
-  /* CSS */
+/* CSS */
+/* 整个body可以拖动的css */
+body {
+  -webkit-app-region: drag; 
+}
 </style>
