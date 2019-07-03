@@ -1,23 +1,21 @@
 <template>
   <div>
-    <video
-      src="https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/login-head.mp4"
-      class="login-video"
-      autoplay
-      loop
-      poster="https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/header-top.png"
-    ></video>
+    <myheader></myheader>
   </div>
 </template>
 <script>
+import myheader from './header'
 export default {
-  name: 'landing-page',
-  components: {},
+  components: {
+    myheader
+  },
   methods: {}
 }
 </script>
 
 <style>
+
+
 *{
   margin: 0;
   padding: 0;
