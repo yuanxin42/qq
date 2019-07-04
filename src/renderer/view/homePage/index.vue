@@ -24,6 +24,8 @@ export default {
   padding: 0;
 }
 .homePage{
+  width: 428px;
+  height: 327px;
   background: #fff;
 }
 </style>

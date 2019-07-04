@@ -13,7 +13,7 @@
           <!-- <a href="#" class="ui-icon-close"></a> -->
         </div>
         <div class="ui-btn-wrap">
-          <button class="ui-btn-lg ui-btn-primary">确定</button>
+          <button class="ui-btn-lg ui-btn-primary">登录</button>
         </div>
       </form>
     </div>
@@ -31,14 +31,21 @@ export default {
   width: 100%;
   height: 160px;
   overflow: hidden;
+  .ui-border-t:before{
+    border-top: 0px;
+  }
   .ui-form{
-    width: 200px;
+    width: 300px;
     margin: 0 auto;
   }
   .login{
     width: 100%;
     input{
-      width: 100px;
+      width: 200px;
+      height: 40px;
+    }
+    .ui-btn-lg{
+      height: 35px;
     }
   }
 }
