@@ -43,6 +43,7 @@ export default {
     input{
       width: 200px;
       height: 40px;
+      cursor: pointer;
     }
     .ui-btn-lg{
       height: 35px;

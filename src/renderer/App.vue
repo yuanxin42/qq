@@ -12,8 +12,12 @@ export default {
 
 <style>
 /* CSS */
-/* 整个body可以拖动的css */
-body {
-  -webkit-app-region: drag; 
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
 }
+/* 整个body可以拖动的css */
+/* #app {
+  -webkit-app-region: drag; 
+} */
 </style>
