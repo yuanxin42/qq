@@ -20,6 +20,8 @@ export default {
 <style lang='scss'>
   .myHeader{
     position: relative;
+    height: 150px;
+    overflow: hidden;
     .menu{
       font-size: 100px;
     }

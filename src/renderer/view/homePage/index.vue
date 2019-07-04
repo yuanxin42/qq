@@ -1,13 +1,16 @@
 <template>
-  <div>
+  <div class="homePage">
     <myheader></myheader>
+    <mycontain></mycontain>
   </div>
 </template>
 <script>
 import myheader from './header'
+import mycontain from './contain'
 export default {
   components: {
-    myheader
+    myheader,
+    mycontain
   },
   methods: {}
 }
@@ -19,5 +22,8 @@ export default {
 *{
   margin: 0;
   padding: 0;
+}
+.homePage{
+  background: #fff;
 }
 </style>
