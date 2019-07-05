@@ -22,6 +22,7 @@ export default {
     position: relative;
     height: 150px;
     overflow: hidden;
+    -webkit-app-region: drag;
     .menu{
       font-size: 100px;
     }
