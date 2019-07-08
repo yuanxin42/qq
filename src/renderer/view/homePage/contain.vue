@@ -4,12 +4,12 @@
       <form action class="login">
         <div class="ui-form-item ui-border-b">
           <label>用户名</label>
-          <input type="text" placeholder="18位身份证号码" />
+          <input type="text" placeholder="请输入用户名" />
           <!-- <a href="#" class="ui-icon-close"></a> -->
         </div>
         <div class="ui-form-item ui-border-b">
-          <label>密码</label>
-          <input type="text" placeholder="18位身份证号码" />
+          <label>密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+          <input type="text" placeholder="请输入密码" />
           <!-- <a href="#" class="ui-icon-close"></a> -->
         </div>
         <div class="ui-btn-wrap">
