@@ -1,18 +1,13 @@
-<!-- 登录页首页 --> 
+<!-- 好友列表页 --> 
 
 <template>
-  <div class="homePage">
-    <myheader></myheader>
-    <mycontain></mycontain>
+  <div class="friends">
+    111111
   </div>
 </template>
 <script>
-import myheader from './header'
-import mycontain from './contain'
 export default {
   components: {
-    myheader,
-    mycontain
   },
   methods: {}
 }

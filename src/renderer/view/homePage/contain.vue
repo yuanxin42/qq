@@ -13,7 +13,7 @@
           <!-- <a href="#" class="ui-icon-close"></a> -->
         </div>
         <div class="ui-btn-wrap">
-          <button class="ui-btn-lg ui-btn-primary">登录</button>
+          <button class="ui-btn-lg ui-btn-primary" @click="login()">登录</button>
         </div>
       </form>
     </div>
@@ -22,7 +22,11 @@
 <script>
 export default {
   components: {},
-  methods: {}
+  methods: {
+    login () {
+      alert(1111)
+    }
+  }
 }
 </script>
 
@@ -49,5 +53,8 @@ export default {
       height: 35px;
     }
   }
+}
+.ui-btn-primary{
+  cursor: pointer;
 }
 </style>
