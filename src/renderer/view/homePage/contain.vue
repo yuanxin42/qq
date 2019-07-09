@@ -24,7 +24,7 @@ export default {
   components: {},
   methods: {
     login () {
-      alert(1111)
+      this.$router.push({ path: `/friends` })
     }
   }
 }

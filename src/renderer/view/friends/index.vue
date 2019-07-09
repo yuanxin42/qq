@@ -6,7 +6,13 @@
   </div>
 </template>
 <script>
+// import {ipcRenderer} from 'electron'
+const { remote } = require('electron')
 export default {
+  mounted () {
+    // ipcRenderer.sendSync('synchronous-message', 'logined')
+    remote.getCurrentWindow().setSize(1000, 1000)
+  },
   components: {
   },
   methods: {}

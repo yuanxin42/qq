@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, ipcMain } from 'electron'
 
 /**
  * Set `__static` path to static files in production
@@ -36,6 +36,11 @@ function createWindow () {
     mainWindow = null
   })
 }
+ipcMain.on('synchronous-message', (event, arg) => {
+  if (arg === 'logined') {
+    // mainWindow.resize(1000, 1000)
+  }
+})
 
 app.on('ready', createWindow)
 

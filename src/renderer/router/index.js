@@ -10,6 +10,10 @@ export default new Router({
       component: require('@/view/homePage/index').default
     },
     {
+      path: '/friends',
+      component: require('@/view/friends/index').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
