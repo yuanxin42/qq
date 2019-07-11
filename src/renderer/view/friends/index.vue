@@ -9,11 +9,11 @@
     </div>
     <div class="contain">
       <el-tabs :stretch="true" v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="消息" name="first">消息</el-tab-pane>
+        <el-tab-pane label="消息" name="first"><message></message></el-tab-pane>
         <el-tab-pane label="联系人" name="second">
           <contact></contact>
         </el-tab-pane>
-        <el-tab-pane label="动态" name="third">联系人</el-tab-pane>
+        <el-tab-pane label="动态" name="third"><dynamic></dynamic></el-tab-pane>
       </el-tabs>
     </div>
   </div>
@@ -21,6 +21,8 @@
 <script>
 // import {ipcRenderer} from 'electron'
 import contact from './contact'
+import message from './message'
+import dynamic from './dynamic'
 const { remote } = require('electron')
 export default {
   data () {
@@ -29,7 +31,9 @@ export default {
     }
   },
   components: {
-    contact
+    contact,
+    message,
+    dynamic
   },
   created () {
     remote.getCurrentWindow().setSize(277, 700)
