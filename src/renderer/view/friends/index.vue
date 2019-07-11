@@ -3,27 +3,37 @@
 <template>
   <div class="friends">
     <div class="header">
-      <div class="logo">
+      <!-- <div class="logo">
         <div class="logoLeft"></div>
-        <!-- <img style="float:right;" src="https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/1-login-icon.png" alt=""> -->
-      </div>
+      </div>-->
     </div>
-    <input type="text">
-    <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
-      <el-tab-pane label="消息" name="first">消息</el-tab-pane>
-      <el-tab-pane label="联系人" name="second">联系人</el-tab-pane>
-      <el-tab-pane label="动态" name="third">动态</el-tab-pane>
-    </el-tabs>
+    <div class="contain">
+      <el-tabs :stretch="true" v-model="activeName" @tab-click="handleClick">
+        <el-tab-pane label="消息" name="first">
+          <div class="friendTab">消息</div>
+        </el-tab-pane>
+        <el-tab-pane label="联系人" name="second">
+          <contact></contact>
+        </el-tab-pane>
+        <el-tab-pane label="动态" name="third">
+          <div class="friendTab">联系人</div>
+        </el-tab-pane>
+      </el-tabs>
+    </div>
   </div>
 </template>
 <script>
 // import {ipcRenderer} from 'electron'
+import contact from './contact'
 const { remote } = require('electron')
 export default {
   data () {
     return {
       activeName: 'first'
     }
+  },
+  components: {
+    contact
   },
   mounted () {
     // ipcRenderer.sendSync('synchronous-message', 'logined')
@@ -32,7 +42,6 @@ export default {
     remote.getCurrentWindow().setResizable(true)
     remote.getCurrentWindow().setSize(277, 700)
   },
-  components: {},
   methods: {
     handleClick (tab, event) {
       console.log(tab, event)
@@ -41,19 +50,34 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
 }
+/* 如果不设置会有默认样式 */
+html,
+body {
+  background: rgba(0, 0, 0, 0);
+}
 .friends {
   /* -webkit-app-region: drag; */
+  /* background: transparent; */
+  height: 700px;
+  width: 277px;
+  background: #fff;
+  border-radius: 5px;
+}
+.contain{
+  width: 257px;
+  margin: 0 10px;
 }
 .header {
   width: 100%;
   height: 136px;
   background: #27c4fd;
   -webkit-app-region: drag;
+  border-radius: 5px 5px 0 0;
   /* background: url('../../assets/QQ图片20190710164231.png') no-repeat; */
   background-size: 100% 136px;
 }
@@ -61,5 +85,8 @@ export default {
   width: 200px;
   height: 40px;
   background: url("https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/1-login-icon.png");
+}
+.friendTab {
+  width: 300px;
 }
 </style>
