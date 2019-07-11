@@ -37,6 +37,7 @@ export default {
   },
   created () {
     remote.getCurrentWindow().setSize(277, 700)
+    remote.getCurrentWindow().setBounds({ x: remote.screen.getPrimaryDisplay().workAreaSize.width - 297, y: 0, width: 277, height: 700 })
   },
   mounted () {},
   methods: {

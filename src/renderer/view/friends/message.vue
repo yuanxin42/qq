@@ -21,7 +21,7 @@
 export default {
   data () {
     return {
-      detail: '还是不要仅凭外表和印象就判断一个人比较好',
+      detail: '你的那双眼睛到底可以看多远',
       arr: [1, 1, 1, 1, 1]
     }
   },
