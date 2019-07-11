@@ -65,12 +65,14 @@ body {
   /* background: transparent; */
   height: 700px;
   width: 277px;
-  background: #fff;
   border-radius: 5px;
 }
 .contain{
   width: 257px;
-  margin: 0 10px;
+  height: 557px;
+  background: #fff;
+  padding: 0 10px;
+  border-radius: 0px 0px 5px 5px;
 }
 .header {
   width: 100%;
