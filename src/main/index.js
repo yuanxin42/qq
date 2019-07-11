@@ -28,13 +28,13 @@ function createWindow () {
     maximizable: false,
     minimizable: false,
     hasShadow: false,
-    // width: 828,
     frame: false,
     transparent: true,
     resizable: false,
     alwaysOnTop: true,
     fullscreenable: false
   })
+  mainWindow.webContents.closeDevTools() // 透明必须要设置关闭调试窗口
 
   mainWindow.loadURL(winURL)
 

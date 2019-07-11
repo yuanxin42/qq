@@ -73,8 +73,4 @@ export default {
 </script>
 
 <style scoped>
-  .contact{
-    height: 510px;
-    /* background: #fff; */
-  }
 </style>
