@@ -41,5 +41,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
+  .ui-feeds{
+    ul{
+      li{
+        img{
+          // width: 100%;
+          height: 100%;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
 </style>

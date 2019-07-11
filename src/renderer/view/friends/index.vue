@@ -76,7 +76,8 @@ body,
   .friendsHeader {
     width: 100%;
     height: 136px;
-    background: #27c4fd;
+    // background: #27c4fd;
+    background: url('../../assets/QQ图片20190711160842.png');
     -webkit-app-region: drag;
     border-radius: 5px 5px 0 0;
     /* background: url('../../assets/QQ图片20190710164231.png') no-repeat; */
