@@ -103,17 +103,15 @@ body,
       overflow: hidden;
       .logoLeft {
         float: right;
-        width: 20px;
+        width: 25px;
         height: 20px;
         cursor: pointer;
-        background: red;
         -webkit-app-region: no-drag;
       }
       .closeTheWindow {
-        margin-right: 20px;
+        margin-right: 12px;
       }
       .minimize {
-        margin-right: 20px;
       }
     }
     .headerDetail {
