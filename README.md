@@ -1,4 +1,4 @@
-# 项目: electron放客户端QQ简易版
+# 项目: electron仿客户端QQ简易版
 
 
 简单讲解electron的起源 --- 学习 -- 从入门到放弃！
