@@ -9,7 +9,11 @@
 
 ------
 ## 效果图
+
+登录页：
 ![Image text](https://github.com/yuanxin42/qq/blob/master/img/QQ图片20190712100207.png)
+
+聊天页：
 ![Image text](https://github.com/yuanxin42/qq/blob/master/img/QQ图片20190712100247.png)
 
 ## Electron是什么?
