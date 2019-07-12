@@ -25,8 +25,8 @@ function createWindow () {
     // height: 627,
     useContentSize: true,
     width: 428,
-    maximizable: false,
-    minimizable: false,
+    // maximizable: false,
+    // minimizable: false,
     hasShadow: false,
     frame: false,
     transparent: true,
@@ -34,7 +34,7 @@ function createWindow () {
     alwaysOnTop: true,
     fullscreenable: false
   })
-  mainWindow.webContents.closeDevTools() // 透明必须要设置关闭调试窗口
+  // mainWindow.webContents.closeDevTools() // 透明必须要设置关闭调试窗口
 
   mainWindow.loadURL(winURL)
 

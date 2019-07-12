@@ -3,9 +3,8 @@
 <template>
   <div class="friends">
     <div class="friendsHeader">
-      <!-- <div class="logo">
-        <div class="logoLeft"></div>
-      </div>-->
+      <div class="logoLeft closeTheWindow" @click="toMinimize()"></div>
+      <div class="logoLeft minimize"></div>
     </div>
     <div class="contain">
       <el-tabs :stretch="true" v-model="activeName" @tab-click="handleClick">
@@ -43,6 +42,9 @@ export default {
   methods: {
     handleClick (tab, event) {
       console.log(tab, event)
+    },
+    toMinimize () {
+      remote.getCurrentWindow().minimize()
     }
   }
 }
@@ -63,9 +65,17 @@ body,
   background: red;
   border-radius: 5px;
   .logoLeft {
-    width: 200px;
-    height: 40px;
-    background: url("https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/1-login-icon.png");
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: red;
+    // background: url("https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/1-login-icon.png");
+  }
+  .closeTheWindow{
+    margin-left: 20px;
+  }
+  .minimize{
+
   }
   .contain {
     width: 257px;
