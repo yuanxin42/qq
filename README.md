@@ -6,6 +6,7 @@
 
 > * 进度：已完成 -- 简易登录页，简易聊天页
 > * 目的：学习electron的开发
+> * 技术栈：electron + vue全家桶 + elementUi + frozenui
 
 ------
 ## 效果图
