@@ -5,10 +5,9 @@
     <div class="friendsHeader">
       <div class="iconLogo">
         <!-- 关闭 -->
-        <div class="logoLeft minimize" @click="toClose()"></div> 
+        <div class="logoLeft minimize" title="关闭" @click="toClose()"></div>
         <!-- 最小化 -->
-        <div class="logoLeft closeTheWindow" @click="toMinimize()"></div>
-        
+        <div class="logoLeft closeTheWindow" title="最小化" @click="toMinimize()"></div>
       </div>
       <div class="headerDetail">
         <!-- 头像那块，现在啥都没有，放了一个图片 -->
@@ -83,22 +82,6 @@ body,
   height: 700px;
   width: 277px;
   border-radius: 5px;
-  .iconLogo {
-    height: 20px;
-    overflow: hidden;
-    .logoLeft {
-      float: right;
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      -webkit-app-region:no-drag;
-    }
-    .closeTheWindow {
-      margin-right: 20px;
-    }
-    .minimize {
-    }
-  }
 
   .contain {
     width: 257px;
@@ -115,6 +98,24 @@ body,
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     background-size: 100% 136px;
+    .iconLogo {
+      height: 20px;
+      overflow: hidden;
+      .logoLeft {
+        float: right;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background: red;
+        -webkit-app-region: no-drag;
+      }
+      .closeTheWindow {
+        margin-right: 20px;
+      }
+      .minimize {
+        margin-right: 20px;
+      }
+    }
     .headerDetail {
       width: 100%;
       height: 88px;
