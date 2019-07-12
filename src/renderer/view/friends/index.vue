@@ -3,16 +3,28 @@
 <template>
   <div class="friends">
     <div class="friendsHeader">
-      <div class="logoLeft closeTheWindow" @click="toMinimize()"></div>
-      <div class="logoLeft minimize"></div>
+      <div class="iconLogo">
+        <!-- 关闭 -->
+        <div class="logoLeft minimize" @click="toClose()"></div> 
+        <!-- 最小化 -->
+        <div class="logoLeft closeTheWindow" @click="toMinimize()"></div>
+        
+      </div>
+      <div class="headerDetail">
+        <!-- 头像那块，现在啥都没有，放了一个图片 -->
+      </div>
     </div>
     <div class="contain">
       <el-tabs :stretch="true" v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="消息" name="first"><message></message></el-tab-pane>
+        <el-tab-pane label="消息" name="first">
+          <message></message>
+        </el-tab-pane>
         <el-tab-pane label="联系人" name="second">
           <contact></contact>
         </el-tab-pane>
-        <el-tab-pane label="动态" name="third"><dynamic></dynamic></el-tab-pane>
+        <el-tab-pane label="动态" name="third">
+          <dynamic></dynamic>
+        </el-tab-pane>
       </el-tabs>
     </div>
   </div>
@@ -36,7 +48,12 @@ export default {
   },
   created () {
     remote.getCurrentWindow().setSize(277, 700)
-    remote.getCurrentWindow().setBounds({ x: remote.screen.getPrimaryDisplay().workAreaSize.width - 297, y: 0, width: 277, height: 700 })
+    remote.getCurrentWindow().setBounds({
+      x: remote.screen.getPrimaryDisplay().workAreaSize.width - 297,
+      y: 0,
+      width: 277,
+      height: 700
+    })
   },
   mounted () {},
   methods: {
@@ -45,6 +62,9 @@ export default {
     },
     toMinimize () {
       remote.getCurrentWindow().minimize()
+    },
+    toClose () {
+      remote.getCurrentWindow().destroy()
     }
   }
 }
@@ -62,21 +82,24 @@ body,
   /* background: transparent; */
   height: 700px;
   width: 277px;
-  background: red;
   border-radius: 5px;
-  .logoLeft {
-    float: right;
-    width: 20px;
+  .iconLogo {
     height: 20px;
-    background: red;
-    // background: url("https://sqimg.qq.com/qq_product_operations/im/pcqq/9.0/img/1-login-icon.png");
+    overflow: hidden;
+    .logoLeft {
+      float: right;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      -webkit-app-region:no-drag;
+    }
+    .closeTheWindow {
+      margin-right: 20px;
+    }
+    .minimize {
+    }
   }
-  .closeTheWindow{
-    margin-left: 20px;
-  }
-  .minimize{
 
-  }
   .contain {
     width: 257px;
     height: 564px;
@@ -87,12 +110,15 @@ body,
   .friendsHeader {
     width: 100%;
     height: 136px;
-    // background: #27c4fd;
-    background: url('../../assets/QQ图片20190711160842.png');
+    background: url("../../assets/QQ图片20190711160842.png");
     -webkit-app-region: drag;
     border-radius: 5px 5px 0 0;
-    /* background: url('../../assets/QQ图片20190710164231.png') no-repeat; */
+    overflow: hidden;
     background-size: 100% 136px;
+    .headerDetail {
+      width: 100%;
+      height: 88px;
+    }
   }
 }
 </style>
