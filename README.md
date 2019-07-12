@@ -1,25 +1,25 @@
-# my-qq
-
-> An electron-vue project
-
-#### Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:9080
-npm run dev
-
-# build electron application for production
-npm run build
+# 项目: electron仿客户端QQ简易版
 
 
-# lint all JS/Vue component files in `src/`
-npm run lint
+简单讲解electron的起源 --- 学习 -- 从入门到放弃！
 
-```
+------
 
----
+> * 进度：已完成 -- 简易登录页，简易聊天页
+> * 目的：学习electron的开发
 
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[8fae476](https://github.com/SimulatedGREG/electron-vue/tree/8fae4763e9d225d3691b627e83b9e09b56f6c935) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+------
+
+
+## Electron是什么?
+
+> 这是一个由GitHub的工程师Cheng Zhao（又名zcbenz）发起的开源项目,Electron是一个实时框架，允许您使用HTML5，CSS和JavaScript创建桌面应用程序。
+
+> Chromium和Node本身就是广受欢迎的应用程序平台，它们都被独立用于创建雄心勃勃的应用程序。 Electron将两个平台结合在一起，允许您使用JavaScript构建一个全新的应用程序类。您可以在浏览器中执行任何操作
+
+![Image text](https://github.com/yuanxin666/qq/blob/master/imgs/QQ图片20190712094509.png)
+
+
+
+
+
