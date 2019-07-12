@@ -17,6 +17,8 @@
 
 > Chromium和Node本身就是广受欢迎的应用程序平台，它们都被独立用于创建雄心勃勃的应用程序。 Electron将两个平台结合在一起，允许您使用JavaScript构建一个全新的应用程序类。您可以在浏览器中执行任何操作
 
+![Image text](https://github.com/yuanxin666/360page/blob/master/imgs/QQ图片20180912184744.png)
+
 
 
 
