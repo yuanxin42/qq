@@ -51,6 +51,7 @@ export default {
     &:hover{
       background: #f6f2fa;
     }
+    cursor: pointer;
     height: 60px;
     // background: red;
     margin-bottom: 2px;
