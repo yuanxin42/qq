@@ -25,6 +25,10 @@
 
 ![Image text](https://github.com/yuanxin42/qq/blob/master/img/QQ图片20190712094509.png)
 
+## 优势：
+   1.如果你有nodeJS开发经验，和web开发经验，你可以很容易的上手electron
+   2.做客户端比做网页更值钱
+
 ## 图解：
 
 electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一个得到了Node.js和基于不同平台的Native APIs加强的Chromium浏览器，可以用来开发跨平台的桌面级应用。
