@@ -62,6 +62,7 @@ export default {
 
 <style lang='scss' scoped>
 .talk {
+  background: #ffffff;
   .header {
     width: 100%;
     height: 40px;
