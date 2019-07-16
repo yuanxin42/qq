@@ -3,7 +3,7 @@
 <template>
   <div class="message">
     <ul>
-      <li class="messageList" v-for="(item, index) in arr" :key="index">
+      <li class="messageList" v-for="(item, index) in arr" @click="toTalk()" :key="index">
         <img
           src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1798222681,2198720046&fm=26&gp=0.jpg"
           alt
@@ -28,6 +28,16 @@ export default {
   methods: {
     handleNodeClick (data) {
       console.log(data)
+    },
+    toTalk () {
+      const routeData = this.$router.resolve({
+        path: '/talk',
+        query: {
+          id: this.itemId
+        }
+      })
+      console.log(routeData.href)
+      window.open(routeData.href, '_blank')
     }
   },
   mounted () {},

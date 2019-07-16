@@ -14,6 +14,10 @@ export default new Router({
       component: require('@/view/friends/index').default
     },
     {
+      path: '/talk',
+      component: require('@/view/talk/index').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
