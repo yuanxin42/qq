@@ -8,7 +8,7 @@
 > * 目的：学习electron的开发
 > * 技术栈：electron + vue全家桶 + elementUi + frozenui
 > * 学习参考文章：[苏南大叔的博客](https://newsn.net/category/electron/)--[electron官网](https://electronjs.org/docs)--[electron-VUE官网](https://simulatedgreg.gitbooks.io/electron-vue/content/cn/getting_started.html)
-> * [electron入门-简单传值](https://juejin.im/post/5cc5641af265da03a85ac9c7#heading-8)--
+> * [electron入门-简单传值](https://juejin.im/post/5cc5641af265da03a85ac9c7#heading-8)
 
 ------
 ## 效果图
@@ -41,6 +41,23 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 > *  2.Renderer进程主要通过Chromium来实现APP的图形界面——就是平时我们熟悉的前端开发的部分，不过得到了electron给予的加强，一些Node的模块（比如fs）和一些在Main进程里能用的东西（比如Clipboard）也能在Render进程里使用。
 
 > *  3.Main进程和Renderer进程通过ipcMain和ipcRenderer来进行通信。通过事件监听和事件派发来实现两个进程通信，从而实现Main或者Renderer进程里不能实现的某些功能。
+
+## electron通信的方式：
+
+> * localstory
+
+> * ipcMain---ipcRenderer 基友通信
+
+> * webContents 渲染以及控制 web 页面，强行操作！
+
+> * node写接口
+
+[简单传值代码地址](https://github.com/yuanxin42/electronStudy/tree/master/1.%E8%B7%A8%E5%9F%9F%E9%80%9A%E4%BF%A1)
+
+
+
+   
+   
 
 
 
