@@ -10,6 +10,8 @@
 > * 学习参考文章：[苏南大叔的博客](https://newsn.net/category/electron/)--[electron官网](https://electronjs.org/docs)--[electron-VUE官网](https://simulatedgreg.gitbooks.io/electron-vue/content/cn/getting_started.html)
 > * [electron入门-简单传值](https://juejin.im/post/5cc5641af265da03a85ac9c7#heading-8)
 
+> * [electron用react快速搭建项目](https://juejin.im/post/5a6a91276fb9a01cbd58ce32#heading-1)
+
 ------
 ## 效果图
 
