@@ -8,7 +8,7 @@
 > * 目的：学习electron的开发
 > * 技术栈：electron + vue全家桶 + elementUi + frozenui
 > * 学习参考文章：[苏南大叔的博客](https://newsn.net/category/electron/)--[electron官网](https://electronjs.org/docs)--[electron-VUE官网](https://simulatedgreg.gitbooks.io/electron-vue/content/cn/getting_started.html)
-> * [掘金大佬学习文章-electron入门](https://juejin.im/post/5a572f26f265da3e513305f6#comment)--
+> * [electron入门-简单传值](https://juejin.im/post/5cc5641af265da03a85ac9c7#heading-8)--
 
 ------
 ## 效果图
