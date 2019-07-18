@@ -36,6 +36,8 @@
 
 ![Image text](https://github.com/yuanxin42/qq/blob/master/img/QQ图片20190712094509.png)
 
+------
+
 ## 图解：
 
 electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一个得到了Node.js和基于不同平台的Native APIs加强的Chromium浏览器，可以用来开发跨平台的桌面级应用。
@@ -44,8 +46,11 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 
 > Electron 运行 package.json 的 main 脚本的进程被称为主进程。 在主进程中运行的脚本通过创建web页面来展示用户界面。 一个 Electron 应用总是有且只有一个**主进程**。
 
+------
+
 > 由于 Electron 使用了 Chromium 来展示 web 页面，所以 Chromium 的多进程架构也被使用到。 每个 Electron 中的 web 页面运行在它自己的**渲染进程**中。在普通的浏览器中，web页面通常在沙盒环境中运行，并且无法访问操作系统的原生资源。 然而 Electron 的用户在 Node.js 的 API 支持下可以在页面中和操作系统进行一些底层交互。
 
+------
 
 **主进程做什么？渲染进程做什么？**
 
@@ -56,6 +61,8 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 > *  2.Renderer进程主要通过Chromium来实现APP的图形界面——就是平时我们熟悉的前端开发的部分，不过得到了electron给予的加强，一些Node的模块（比如fs）和一些在Main进程里能用的东西（比如Clipboard）也能在Render进程里使用。
 
 > *  3.Main进程和Renderer进程通过ipcMain和ipcRenderer来进行通信。通过事件监听和事件派发来实现两个进程通信，从而实现Main或者Renderer进程里不能实现的某些功能。
+
+------
 
 ## app - 生命周期钩子:
 
@@ -78,6 +85,8 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 > * browser-window-created 当一个BrowserWindow被创建的时候
 
 > * browser-window-focus 当一个BrowserWindow处于激活状态的时候
+
+------
 
 ## electron通信的方式：
 
