@@ -7,7 +7,6 @@
    > * npm install
    > * npm run dev
 ------
-------
 
 > * 进度：已完成 -- 简易登录页，简易聊天页
 > * 目的：学习electron的开发
