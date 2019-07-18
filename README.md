@@ -3,7 +3,7 @@
 简单讲解electron的起源 --- 学习 -- 从入门到放弃！
 
 ## 启动
-------
+
    > * npm install
    > * npm run dev
 ------
