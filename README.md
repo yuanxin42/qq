@@ -48,6 +48,7 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 
 
 **主进程做什么？渲染进程？做什么？**
+
 它的开发主要涉及到两个进程的协作——Main（主）进程和Renderer（渲染）进程。简单的理解两个进程的作用：
 
 > *  1.Main进程主要通过Node.js、Chromium和Native APIs来实现一些系统以及底层的操作，比如创建系统级别的菜单，操作剪贴板，创建APP的窗口等。同时，也可以在electron中使用node的api，是不是觉得很亲切，很舒服？
