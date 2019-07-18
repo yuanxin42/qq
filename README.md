@@ -16,11 +16,12 @@
 > * [electron入门-简单传值](https://juejin.im/post/5cc5641af265da03a85ac9c7#heading-8)
 > * [electron用react快速搭建项目](https://juejin.im/post/5a6a91276fb9a01cbd58ce32#heading-1)
 
-------
 ## 效果图
 
 登录页：
 ![Image text](https://github.com/yuanxin42/qq/blob/master/img/QQ图片20190712100207.png)
+
+------
 
 
 ## Electron是什么?
@@ -36,7 +37,6 @@
 
 ![Image text](https://github.com/yuanxin42/qq/blob/master/img/QQ图片20190712094509.png)
 
-------
 
 ## 图解：
 
