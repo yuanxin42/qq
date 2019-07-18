@@ -108,10 +108,12 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 
 > * remote模块
 
+------
+
 [electron入门-简单传值](https://juejin.im/post/5cc5641af265da03a85ac9c7#heading-8)
 
 [简单传值代码地址](https://github.com/yuanxin42/electronStudy/tree/master/1.%E8%B7%A8%E5%9F%9F%E9%80%9A%E4%BF%A1)
-------
+
 
 
 
