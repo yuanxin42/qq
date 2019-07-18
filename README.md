@@ -47,7 +47,7 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 > 由于 Electron 使用了 Chromium 来展示 web 页面，所以 Chromium 的多进程架构也被使用到。 每个 Electron 中的 web 页面运行在它自己的**渲染进程**中。在普通的浏览器中，web页面通常在沙盒环境中运行，并且无法访问操作系统的原生资源。 然而 Electron 的用户在 Node.js 的 API 支持下可以在页面中和操作系统进行一些底层交互。
 
 
-**主进程做什么？渲染进程？做什么？**
+**主进程做什么？渲染进程做什么？**
 
 它的开发主要涉及到两个进程的协作——Main（主）进程和Renderer（渲染）进程。简单的理解两个进程的作用：
 
