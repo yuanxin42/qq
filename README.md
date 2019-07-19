@@ -44,6 +44,8 @@
 
 electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一个得到了Node.js和基于不同平台的Native APIs加强的Chromium浏览器，可以用来开发跨平台的桌面级应用。
 
+窗口，按钮，自定义系统快捷键，屏幕，光标的位置，放在系统store的api，请求的发送，记录日志，通信传值，系统对话框等等
+
 **什么是主进程？什么是渲染进程？**
 
 ------
