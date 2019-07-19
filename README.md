@@ -90,7 +90,7 @@ electron由Node.js+Chromium+Native APIs构成。你可以理解成，它是一�
 ## electron通信的方式：
 ------
 
-> * localstory
+> * localStorage
 > * ipcMain---ipcRenderer 基友通信
 > * webContents 渲染以及控制 web 页面，强行操作！
 > * node写接口
