@@ -6,7 +6,7 @@
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
-    "build": "node .electron-vue/build.js && electron-builder",
+    "build": "node .electron-vue/build.js && electron-builder --macos",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
     "win32": "node .electron-vue/build.js && electron-builder --platform=win32  --arch=ia32",
     "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
@@ -44,7 +44,8 @@
       ]
     },
     "mac": {
-      "icon": "build/icons/icon.icns"
+      "icon": "build/icons/icon.icns",
+      "target": "pkg"
     },
     "win": {
       "icon": "build/icons/icon.ico"
@@ -81,8 +82,8 @@
     "css-loader": "^0.28.11",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
-    "electron": "^2.0.4",
-    "electron-builder": "^20.19.2",
+    "electron": "2.0.4",
+    "electron-builder": "20.38.0",
     "electron-debug": "^1.5.0",
     "electron-devtools-installer": "^2.2.4",
     "eslint": "^4.19.1",
